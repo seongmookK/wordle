@@ -1,0 +1,33 @@
+header {
+  border-top: 1px solid #ededef;
+  border-bottom: 1px solid #ededef;
+  margin-top: 20px;
+}
+
+.info-bar {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.info-bar__img1 {
+  width: 30px;
+  height: 30px;
+}
+
+.info-bar__title {
+  padding-left: 26px;
+  font-weight: bold;
+  font-size: 25px;
+}
+
+.info-bar__img2 {
+  padding-right: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+}
