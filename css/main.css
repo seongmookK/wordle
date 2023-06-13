@@ -16,4 +16,29 @@ main {
   border: 2.5px solid #d3d6da;
   width: 55px;
   height: 55px;
+  font-size: large;
+  font-weight: bold;
+}
+
+.board-column.animated {
+  animation-name: rotateBoard;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+  animation-iteration-count: 1;
+}
+
+@keyframes rotateBoard {
+  0% {
+    transform: rotateX(0deg);
+  }
+  100% {
+    transform: rotateX(360deg);
+  }
+}
+
+.timer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
 }
