@@ -1,4 +1,4 @@
-const right_answer = "APPLE";
+const right_answer = "DREAM";
 
 let index = 0;
 let attempts = 0;
