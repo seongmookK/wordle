@@ -1,5 +1,3 @@
-const right_answer = "DREAM";
-
 let index = 0;
 let attempts = 0;
 let timer;
@@ -26,8 +24,14 @@ function appStart() {
     index = 0;
   };
 
-  const handleEnterKey = () => {
+  const handleEnterKey = async () => {
     let right_counts = 0;
+    const response = await fetch("/answer");
+    console.log("응답", response);
+    const right_answer_object = await response.json();
+    console.log("정답객체", right_answer_object);
+    const right_answer = right_answer_object.answer;
+    console.log("정답", right_answer);
 
     for (let i = 0; i < 5; i++) {
       const block = document.querySelector(
